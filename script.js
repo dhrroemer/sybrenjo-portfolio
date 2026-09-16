@@ -124,6 +124,7 @@ const dialog = document.querySelector('#project-dialog');
 const dialogContent = document.querySelector('#dialog-content');
 const imageDialog = document.querySelector('#image-dialog');
 const lightboxImage = document.querySelector('#lightbox-image');
+const cvDialog = document.querySelector('#cv-dialog');
 const formspreeEndpoint = 'https://formspree.io/f/mdeknvya';
 const renderProjects = (projects) => {
   grid.innerHTML = projects
@@ -184,9 +185,20 @@ document
 dialog.addEventListener('click', (event) => {
   if (event.target === dialog) dialog.close();
 });
-document.querySelector('#image-dialog-close').addEventListener('click', () => imageDialog.close());
+document
+  .querySelector('#image-dialog-close')
+  .addEventListener('click', () => imageDialog.close());
 imageDialog.addEventListener('click', (event) => {
   if (event.target === imageDialog) imageDialog.close();
+});
+document.querySelector('#cv-view-button').addEventListener('click', () => {
+  cvDialog.showModal();
+});
+document.querySelector('#cv-dialog-close').addEventListener('click', () => {
+  cvDialog.close();
+});
+cvDialog.addEventListener('click', (event) => {
+  if (event.target === cvDialog) cvDialog.close();
 });
 const contactForm = document.querySelector('#contact-form');
 contactForm.addEventListener('submit', async (event) => {

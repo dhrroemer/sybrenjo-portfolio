@@ -142,11 +142,8 @@
             <span class="cv-label">Curriculum vitae</span
             ><strong>Mijn ervaring<br />in één overzicht.</strong>
             <div class="cv-actions">
-              <a
-                href="cv/Resume%20maart%202026.pdf"
-                target="_blank"
-                rel="noreferrer"
-                >Bekijk CV <span>↗</span></a
+              <button class="cv-view-button" id="cv-view-button" type="button"
+                >Bekijk CV <span>↗</span></button
               ><a href="cv/Resume%20maart%202026.pdf" download
                 >Download <span>↓</span></a
               >
@@ -217,10 +214,29 @@
       <div id="dialog-content"></div>
     </dialog>
     <dialog id="image-dialog" class="image-dialog">
-      <button class="dialog-close" id="image-dialog-close" aria-label="Sluit afbeelding">
+      <button
+        class="dialog-close"
+        id="image-dialog-close"
+        aria-label="Sluit afbeelding"
+      >
         ×
       </button>
       <img id="lightbox-image" src="" alt="" />
+    </dialog>
+    <dialog id="cv-dialog" class="cv-dialog">
+      <div class="cv-dialog-header">
+        <p class="kicker">Curriculum vitae</p>
+        <button class="dialog-close" id="cv-dialog-close" aria-label="Sluit CV">
+          ×
+        </button>
+      </div>
+      <iframe
+        src="cv/Resume%20maart%202026.pdf"
+        title="CV van Sybrenjo Roemer"
+      ></iframe>
+      <a class="button button-light cv-download" href="cv/Resume%20maart%202026.pdf" download
+        >Download CV <span>↓</span></a
+      >
     </dialog>
     <script src="script.js"></script>
   </body>

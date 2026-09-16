@@ -660,6 +660,49 @@ dialog::backdrop {
 .image-dialog::backdrop {
   background: rgba(24, 35, 31, 0.82);
 }
+.cv-dialog {
+  width: min(900px, 94vw);
+  height: min(88vh, 900px);
+  padding: 22px;
+  border: 0;
+  background: var(--paper);
+}
+.cv-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 34px;
+}
+.cv-dialog-header .kicker {
+  margin: 0;
+}
+.cv-dialog iframe {
+  display: block;
+  width: 100%;
+  height: calc(100% - 78px);
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.cv-download {
+  margin-top: 12px;
+}
+.cv-view-button {
+  padding: 0 0 5px;
+  border: 0;
+  border-bottom: 1px solid var(--paper);
+  background: transparent;
+  color: var(--paper);
+  font: 10px var(--mono);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.cv-view-button span {
+  color: var(--lime);
+  font-size: 15px;
+}
+.cv-dialog::backdrop {
+  background: rgba(24, 35, 31, 0.82);
+}
 @media (max-width: 800px) {
   .site-header {
     padding: 0 22px;
@@ -768,5 +811,13 @@ dialog::backdrop {
   }
   .image-dialog #lightbox-image {
     max-height: calc(86vh - 62px);
+  }
+  .cv-dialog {
+    width: 94vw;
+    height: 86vh;
+    padding: 12px;
+  }
+  .cv-dialog iframe {
+    height: calc(100% - 68px);
   }
 }
