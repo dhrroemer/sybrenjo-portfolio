@@ -637,6 +637,29 @@ dialog::backdrop {
   display: inline-block;
   margin-top: 20px;
 }
+.image-dialog {
+  width: min(92vw, 1100px);
+  max-width: 92vw;
+  max-height: 92vh;
+  padding: 52px 18px 18px;
+  border: 0;
+  background: var(--dark);
+  overflow: hidden;
+}
+.image-dialog #lightbox-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: calc(92vh - 70px);
+  margin: 0 auto;
+  object-fit: contain;
+}
+.image-dialog .dialog-close {
+  color: var(--paper);
+}
+.image-dialog::backdrop {
+  background: rgba(24, 35, 31, 0.82);
+}
 @media (max-width: 800px) {
   .site-header {
     padding: 0 22px;
@@ -736,5 +759,14 @@ dialog::backdrop {
   }
   #dialog-content .project-gallery img:first-child {
     grid-column: auto;
+  }
+  .image-dialog {
+    width: 92vw;
+    max-width: 92vw;
+    max-height: 86vh;
+    padding: 48px 10px 10px;
+  }
+  .image-dialog #lightbox-image {
+    max-height: calc(86vh - 62px);
   }
 }
