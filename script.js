@@ -124,7 +124,7 @@ const dialog = document.querySelector('#project-dialog');
 const dialogContent = document.querySelector('#dialog-content');
 const imageDialog = document.querySelector('#image-dialog');
 const lightboxImage = document.querySelector('#lightbox-image');
-const formspreeEndpoint = '';
+const formspreeEndpoint = 'https://formspree.io/f/mdeknvya';
 const renderProjects = (projects) => {
   grid.innerHTML = projects
     .map(
