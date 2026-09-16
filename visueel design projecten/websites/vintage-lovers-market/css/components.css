@@ -1,0 +1,268 @@
+.button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 14px 22px;
+  text-align: center;
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.button-primary {
+  background-color: var(--color-terracotta);
+  color: var(--color-white);
+}
+
+.button-primary:hover {
+  background-color: #823d29;
+}
+
+.button-secondary {
+  border-color: var(--color-charcoal);
+  color: var(--color-charcoal);
+}
+
+.button-secondary:hover {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.text-link {
+  color: var(--color-terracotta);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--space-sm);
+  margin: var(--space-lg) auto 0;
+  max-width: 540px;
+}
+
+.newsletter-form input {
+  background-color: var(--color-white);
+  border: 1px solid #c8c1b5;
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+}
+
+.newsletter-form input:focus {
+  border-color: var(--color-terracotta);
+  outline: 2px solid rgba(163, 79, 53, 0.2);
+}
+
+.form-message {
+  color: var(--color-forest);
+  font-weight: 700;
+  margin-top: var(--space-sm);
+  min-height: 24px;
+}
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.seller-form {
+  display: grid;
+  gap: var(--space-md);
+  margin: 0 auto;
+  max-width: 680px;
+}
+
+.form-group {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: var(--color-white);
+  border: 1px solid #c8c1b5;
+  padding: 14px;
+  width: 100%;
+}
+
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--color-terracotta);
+  outline: 2px solid rgba(163, 79, 53, 0.2);
+}
+
+.item-card img.item-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.item-detail {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr 1fr;
+}
+
+.item-detail-image {
+  align-items: center;
+  aspect-ratio: 4 / 5;
+  background-color: var(--color-sand);
+  display: flex;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  justify-content: center;
+  padding: var(--space-md);
+  text-align: center;
+}
+
+.item-detail-content {
+  align-self: center;
+}
+
+.item-detail-content .item-price {
+  color: var(--color-terracotta);
+  font-size: 1.4rem;
+  margin-top: var(--space-md);
+}
+
+.item-description {
+  margin-top: var(--space-md);
+  max-width: 560px;
+}
+
+.item-specifications {
+  border-bottom: 1px solid var(--color-sand);
+  border-top: 1px solid var(--color-sand);
+  margin: var(--space-lg) 0;
+}
+
+.item-specifications div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.item-specifications div + div {
+  border-top: 1px solid var(--color-sand);
+}
+
+.item-specifications dt {
+  font-weight: 700;
+}
+
+.item-specifications dd {
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.item-detail-content .text-link {
+  display: inline-block;
+  margin-top: var(--space-md);
+}
+
+.story {
+  align-items: start;
+  display: grid;
+  gap: var(--space-xl);
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.story p + p {
+  margin-top: var(--space-md);
+}
+
+.values {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.values article {
+  border-top: 1px solid var(--color-charcoal);
+  padding-top: var(--space-md);
+}
+
+.values h2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
+.values article > p:last-child {
+  color: var(--color-muted);
+}
+
+.newsletter-benefits {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+}
+
+.newsletter-benefits article {
+  border-top: 1px solid var(--color-charcoal);
+  padding-top: var(--space-md);
+}
+
+.newsletter-benefits h2 {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-sm);
+}
+
+.newsletter-benefits article > p:last-child {
+  color: var(--color-muted);
+}
+
+@media (max-width: 700px) {
+  .item-detail,
+  .story,
+  .values,
+  .newsletter-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .story {
+    gap: var(--space-lg);
+  }
+}
+.item-card {
+  height: 100%;
+}
+
+.item-card h2,
+.item-card h3 {
+  min-height: 3.45em;
+}
+
+.item-card .item-price {
+  margin-top: auto;
+}
+
+.item-card .text-link {
+  margin-top: 4px;
+}

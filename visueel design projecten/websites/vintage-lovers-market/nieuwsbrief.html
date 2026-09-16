@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Schrijf je in voor de nieuwsbrief van Vintage Lovers Market."
+    />
+    <title>Nieuwsbrief | Vintage Lovers Market</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">VINTAGE LOVERS MARKET</a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="collectie.html">Collectie</a>
+        <a href="verkoper-worden.html">Verkoop</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="nieuwsbrief.html">Nieuwsbrief</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="newsletter section">
+        <p class="eyebrow">Elke week in je inbox</p>
+        <h1>De beste vintage vondsten, zorgvuldig geselecteerd.</h1>
+        <p>
+          Ontvang nieuwe collecties, verhalen van verkopers en unieke items
+          voordat ze weg zijn.
+        </p>
+
+        <form class="newsletter-form" id="newsletter-form">
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nieuwe nieuwsbriefinschrijving"
+          />
+
+          <label class="sr-only" for="email">E-mailadres</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="jouw@email.nl"
+            required
+          />
+
+          <button class="button button-primary" type="submit">
+            Inschrijven
+          </button>
+        </form>
+
+        <p class="form-message" id="newsletter-message" aria-live="polite"></p>
+      </section>
+
+      <section class="section newsletter-benefits">
+        <article>
+          <p class="eyebrow">01</p>
+          <h2>Nieuwe vondsten</h2>
+          <p>Bekijk de meest bijzondere items van die week.</p>
+        </article>
+
+        <article>
+          <p class="eyebrow">02</p>
+          <h2>Verhalen</h2>
+          <p>
+            Leer de verkopers en de geschiedenis achter hun collecties kennen.
+          </p>
+        </article>
+
+        <article>
+          <p class="eyebrow">03</p>
+          <h2>Geen spam</h2>
+          <p>Eén e-mail per week, alleen wanneer er iets te ontdekken valt.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="logo" href="index.html">VINTAGE LOVERS MARKET</a>
+      <p>Een plek voor items met een verleden en een toekomst.</p>
+      <p>
+        © 2026 Vintage Lovers Market · Gemaakt met oog voor detail door Sybrenjo
+        Roemer
+      </p>
+    </footer>
+
+    <script src="js/nieuwsbrief.js"></script>
+  </body>
+</html>

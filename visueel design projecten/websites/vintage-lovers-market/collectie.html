@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ontdek de gecureerde vintage collectie van Vintage Lovers Market."
+    />
+    <title>Collectie | Vintage Lovers Market</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">VINTAGE LOVERS MARKET</a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="collectie.html">Collectie</a>
+        <a href="verkoper-worden.html">Verkoop</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="nieuwsbrief.html">Nieuwsbrief</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section collection-header">
+        <p class="eyebrow">Gecureerde vondsten</p>
+        <h1>De collectie</h1>
+        <p>Unieke items van onafhankelijke vintage verkopers.</p>
+      </section>
+
+      <section class="section collection-content">
+        <div class="filter-bar">
+          <label for="category-filter">Categorie</label>
+          <select id="category-filter">
+            <option value="all">Alle categorieën</option>
+            <option value="interieur">Interieur</option>
+            <option value="mode">Mode</option>
+            <option value="wonen">Wonen</option>
+          </select>
+        </div>
+
+        <div class="item-grid" id="collection-items">
+          <article class="item-card" data-category="interieur">
+            <div class="item-image item-image-placeholder">Vintage lamp</div>
+            <p class="item-category">Interieur</p>
+            <h2>Messing tafellamp uit de jaren 70</h2>
+            <p class="item-price">€ 85</p>
+            <a class="text-link" href="item.html">Bekijk item</a>
+          </article>
+
+          <article class="item-card" data-category="mode">
+            <div class="item-image item-image-placeholder">Leren jas</div>
+            <p class="item-category">Mode</p>
+            <h2>Donkerbruine leren jas</h2>
+            <p class="item-price">€ 120</p>
+            <a class="text-link" href="item.html">Bekijk item</a>
+          </article>
+
+          <article class="item-card" data-category="wonen">
+            <div class="item-image item-image-placeholder">Keramieken vaas</div>
+            <p class="item-category">Wonen</p>
+            <h2>Handgemaakte keramieken vaas</h2>
+            <p class="item-price">€ 45</p>
+            <a class="text-link" href="item.html">Bekijk item</a>
+          </article>
+
+          <article class="item-card" data-category="interieur">
+            <div class="item-image item-image-placeholder">Houten stoel</div>
+            <p class="item-category">Interieur</p>
+            <h2>Massief houten eetkamerstoel</h2>
+            <p class="item-price">€ 65</p>
+            <a class="text-link" href="item.html">Bekijk item</a>
+          </article>
+
+          <article class="item-card" data-category="mode">
+            <div class="item-image item-image-placeholder">Zijden blouse</div>
+            <p class="item-category">Mode</p>
+            <h2>Crèmekleurige zijden blouse</h2>
+            <p class="item-price">€ 55</p>
+            <a class="text-link" href="item.html">Bekijk item</a>
+          </article>
+
+          <article class="item-card" data-category="wonen">
+            <div class="item-image item-image-placeholder">Wandspiegel</div>
+            <p class="item-category">Wonen</p>
+            <h2>Ovale spiegel met houten rand</h2>
+            <p class="item-price">€ 90</p>
+            <a class="text-link" href="item.html">Bekijk item</a>
+          </article>
+        </div>
+
+        <p class="form-message" id="no-items-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="logo" href="index.html">VINTAGE LOVERS MARKET</a>
+      <p>Een plek voor items met een verleden en een toekomst.</p>
+      <p>
+        © 2026 Vintage Lovers Market · Gemaakt met oog voor detail door Sybrenjo
+        Roemer
+      </p>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/collectie.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meld je aan als verkoper bij Vintage Lovers Market."
+    />
+    <title>Word verkoper | Vintage Lovers Market</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">VINTAGE LOVERS MARKET</a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="collectie.html">Collectie</a>
+        <a href="verkoper-worden.html">Verkoop</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="nieuwsbrief.html">Nieuwsbrief</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro section">
+        <p class="eyebrow">Voor onafhankelijke verkopers</p>
+        <h1>Verkoop vintage aan mensen die het waarderen.</h1>
+        <p>
+          Meld je aan voor de eerste groep verkopers van Vintage Lovers Market.
+          We zoeken een kleine, sterke selectie van unieke collecties.
+        </p>
+      </section>
+
+      <section class="section">
+        <form class="seller-form" id="seller-form">
+          <div class="form-group">
+            <label for="naam">Naam</label>
+            <input id="naam" name="naam" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="winkelnaam"
+              >Naam van je winkel of Instagram-account</label
+            >
+            <input id="winkelnaam" name="winkelnaam" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label for="categorie">Wat verkoop je voornamelijk?</label>
+            <select id="categorie" name="categorie" required>
+              <option value="">Kies een categorie</option>
+              <option value="mode">Vintage mode</option>
+              <option value="interieur">Vintage interieur</option>
+              <option value="kunst">Kunst en decoratie</option>
+              <option value="anders">Anders</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bericht">Vertel kort over je collectie</label>
+            <textarea id="bericht" name="bericht" rows="6" required></textarea>
+          </div>
+
+          <button class="button button-primary" type="submit">
+            Verstuur aanmelding
+          </button>
+          <p class="form-message" id="seller-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="logo" href="index.html">VINTAGE LOVERS MARKET</a>
+      <p>Een plek voor items met een verleden en een toekomst.</p>
+      <p>
+        © 2026 Vintage Lovers Market · Gemaakt met oog voor detail door Sybrenjo
+        Roemer
+      </p>
+    </footer>
+
+    <script src="js/formulieren.js"></script>
+  </body>
+</html>

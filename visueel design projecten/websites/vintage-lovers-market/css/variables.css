@@ -1,0 +1,24 @@
+:root {
+  --color-cream: #f7f3eb;
+  --color-sand: #e9dfcf;
+  --color-terracotta: #a34f35;
+  --color-forest: #253c32;
+  --color-charcoal: #20201d;
+  --color-white: #ffffff;
+  --color-muted: #6b6962;
+
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: Arial, Helvetica, sans-serif;
+
+  --max-width: 1200px;
+  --page-padding: 24px;
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+
+  --border-radius: 4px;
+  --transition: 180ms ease;
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bekijk een uniek vintage item op Vintage Lovers Market."
+    />
+    <title>Item | Vintage Lovers Market</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">VINTAGE LOVERS MARKET</a>
+
+      <nav class="main-nav" aria-label="Hoofdnavigatie">
+        <a href="collectie.html">Collectie</a>
+        <a href="verkoper-worden.html">Verkoop</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="nieuwsbrief.html">Nieuwsbrief</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section item-detail">
+        <div class="item-detail-image item-image-placeholder" id="item-image">
+          Vintage item
+        </div>
+
+        <div class="item-detail-content">
+          <p class="eyebrow" id="item-category">Categorie</p>
+          <h1 id="item-title">Item wordt geladen...</h1>
+          <p class="item-price" id="item-price"></p>
+
+          <p class="item-description" id="item-description"></p>
+
+          <dl class="item-specifications">
+            <div>
+              <dt>Periode</dt>
+              <dd id="item-period"></dd>
+            </div>
+            <div>
+              <dt>Conditie</dt>
+              <dd id="item-condition"></dd>
+            </div>
+            <div>
+              <dt>Verkoper</dt>
+              <dd id="item-seller"></dd>
+            </div>
+          </dl>
+
+          <button
+            class="button button-primary"
+            id="interest-button"
+            type="button"
+          >
+            Ik heb interesse
+          </button>
+
+          <p class="form-message" id="interest-message" aria-live="polite"></p>
+          <a class="text-link" href="collectie.html">Terug naar de collectie</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="logo" href="index.html">VINTAGE LOVERS MARKET</a>
+      <p>Een plek voor items met een verleden en een toekomst.</p>
+      <p>
+        © 2026 Vintage Lovers Market · Gemaakt met oog voor detail door Sybrenjo
+        Roemer
+      </p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/item.js"></script>
+  </body>
+</html>
