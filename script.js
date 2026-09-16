@@ -39,7 +39,8 @@ const fallbackProjects = [
     description:
       'Een heldere visuele richting voor een merk dat dagelijkse eenvoud net iets leuker maakt.',
     url: 'visueel%20design%20projecten/websites/klikoklaar/index.html',
-    image: 'visueel%20design%20projecten/websites/klikoklaar/image/hero-werk.png',
+    image:
+      'visueel%20design%20projecten/websites/klikoklaar/image/hero-werk.png',
     media: [
       'visueel%20design%20projecten/websites/klikoklaar/image/hero-werk.png',
       'visueel%20design%20projecten/websites/klikoklaar/image/logo-klikoklaar-horizontal.png',
@@ -121,6 +122,9 @@ const fallbackProjects = [
 const grid = document.querySelector('#project-grid');
 const dialog = document.querySelector('#project-dialog');
 const dialogContent = document.querySelector('#dialog-content');
+const imageDialog = document.querySelector('#image-dialog');
+const lightboxImage = document.querySelector('#lightbox-image');
+const formspreeEndpoint = '';
 const renderProjects = (projects) => {
   grid.innerHTML = projects
     .map(
@@ -143,8 +147,20 @@ const renderProjects = (projects) => {
   });
 };
 const openProject = (project) => {
-  const media = (project.media || []).map((source, index) => `<img src="${source}" alt="${project.title} afbeelding ${index + 1}" loading="lazy" />`).join('');
+  const media = (project.media || [])
+    .map(
+      (source, index) =>
+        `<img src="${source}" alt="${project.title} afbeelding ${index + 1}" loading="lazy" />`,
+    )
+    .join('');
   dialogContent.innerHTML = `<p class="kicker">${project.typeLabel} / ${project.year}</p><h2>${project.title}</h2><p>${project.description}</p>${media ? `<div class="project-gallery">${media}</div>` : ''}<a class="button button-dark" href="${project.url}" target="_blank" rel="noreferrer">Bekijk live project <span>↗</span></a>`;
+  dialogContent.querySelectorAll('.project-gallery img').forEach((image) => {
+    image.addEventListener('click', () => {
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt;
+      imageDialog.showModal();
+    });
+  });
   dialog.showModal();
 };
 renderProjects(fallbackProjects);
@@ -168,6 +184,10 @@ document
 dialog.addEventListener('click', (event) => {
   if (event.target === dialog) dialog.close();
 });
+document.querySelector('#image-dialog-close').addEventListener('click', () => imageDialog.close());
+imageDialog.addEventListener('click', (event) => {
+  if (event.target === imageDialog) imageDialog.close();
+});
 const contactForm = document.querySelector('#contact-form');
 contactForm.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -175,7 +195,8 @@ contactForm.addEventListener('submit', async (event) => {
   const data = Object.fromEntries(new FormData(contactForm));
   status.textContent = 'Bericht wordt verstuurd...';
   try {
-    const response = await fetch('/api/contact', {
+    const endpoint = formspreeEndpoint || '/api/contact';
+    const response = await fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),

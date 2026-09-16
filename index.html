@@ -8,6 +8,7 @@
       content="Portfolio van Sybrenjo Roemer - visueel designer en front-end developer."
     />
     <title>Sybrenjo Roemer — Designer & developer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -201,7 +202,10 @@
       </p>
       <div class="footer-links">
         <a href="mailto:dhr.roemer@gmail.com">E-mail ↗</a
-        ><a href="https://www.linkedin.com" target="_blank" rel="noreferrer"
+        ><a
+          href="https://www.linkedin.com/in/sybrenjo-roemer-875704192/"
+          target="_blank"
+          rel="noreferrer"
           >LinkedIn ↗</a
         >
       </div>
@@ -211,6 +215,12 @@
         ×
       </button>
       <div id="dialog-content"></div>
+    </dialog>
+    <dialog id="image-dialog" class="image-dialog">
+      <button class="dialog-close" id="image-dialog-close" aria-label="Sluit afbeelding">
+        ×
+      </button>
+      <img id="lightbox-image" src="" alt="" />
     </dialog>
     <script src="script.js"></script>
   </body>
