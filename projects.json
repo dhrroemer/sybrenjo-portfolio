@@ -7,7 +7,16 @@
     "year": "2026",
     "description": "Een digitaal platform voor vintage vondsten, met een rustige editorial stijl en ruimte voor onafhankelijke verkopers.",
     "url": "visueel%20design%20projecten/websites/vintage-lovers-market/index.html",
-    "image": "visueel%20design%20projecten/websites/vintage-lovers-market/images/hero/vintage-market-hero.jpg"
+    "image": "visueel%20design%20projecten/websites/vintage-lovers-market/images/hero/vintage-market-hero.jpg",
+    "media": [
+      "visueel%20design%20projecten/websites/vintage-lovers-market/images/hero/vintage-market-hero.jpg",
+      "visueel%20design%20projecten/websites/vintage-lovers-market/images/items/donkerbruine-leren-jas.jpg",
+      "visueel%20design%20projecten/websites/vintage-lovers-market/images/items/houten-eetkamerstoel.jpg",
+      "visueel%20design%20projecten/websites/vintage-lovers-market/images/items/keramieken-vaas.jpg",
+      "visueel%20design%20projecten/websites/vintage-lovers-market/images/items/messing-tafellamp.jpg",
+      "visueel%20design%20projecten/websites/vintage-lovers-market/images/items/ovale-spiegel.jpg",
+      "visueel%20design%20projecten/websites/vintage-lovers-market/images/items/zijden-blouse.jpg"
+    ]
   },
   {
     "id": "pizza-house",
@@ -25,7 +34,19 @@
     "typeLabel": "Webdesign",
     "year": "2025",
     "description": "Een heldere visuele richting voor een merk dat dagelijkse eenvoud net iets leuker maakt.",
-    "url": "visueel%20design%20projecten/websites/klikoklaar/index.html"
+    "url": "visueel%20design%20projecten/websites/klikoklaar/index.html",
+    "image": "visueel%20design%20projecten/websites/klikoklaar/image/hero-werk.png",
+    "media": [
+      "visueel%20design%20projecten/websites/klikoklaar/image/hero-werk.png",
+      "visueel%20design%20projecten/websites/klikoklaar/image/logo-klikoklaar-horizontal.png",
+      "visueel%20design%20projecten/websites/klikoklaar/image/after-blauwecontainer.jpg",
+      "visueel%20design%20projecten/websites/klikoklaar/image/after-grijzecontainer.jpg",
+      "visueel%20design%20projecten/websites/klikoklaar/image/after-groencontainer.jpg",
+      "visueel%20design%20projecten/websites/klikoklaar/image/before-blauwecontainer.jpg",
+      "visueel%20design%20projecten/websites/klikoklaar/image/before-grijzecontainer.jpg",
+      "visueel%20design%20projecten/websites/klikoklaar/image/before-groencontainer.jpg",
+      "visueel%20design%20projecten/websites/klikoklaar/image/close-up-schoon-resultaat.jpg"
+    ]
   },
   {
     "id": "gerechtbuilder",
@@ -44,7 +65,18 @@
     "year": "2025",
     "description": "Een complete visuele identiteit voor een sportdrank, van logo-systeem en iconen tot campagnes en productpresentatie.",
     "url": "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/product%20mockup%20showcase.png",
-    "image": "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/product%20mockup%20showcase.png"
+    "image": "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/product%20mockup%20showcase.png",
+    "media": [
+      "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/Brand%20baseline.png",
+      "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/Logo%20system%20and%20variations.png",
+      "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/Premary%20logo%20pres..png",
+      "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/Urban%20campaign%20ads.png",
+      "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/app%20UI%20and%20UX%20previews.png",
+      "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/custom%20icon%20collection.png",
+      "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/flash%20photography%20aesthetics.png",
+      "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/product%20mockup%20showcase.png",
+      "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/social%20media%20visuals.png"
+    ]
   },
   {
     "id": "poster-design",
@@ -54,7 +86,8 @@
     "year": "2025",
     "description": "Een grafische postercompositie waarin typografie, kleur en beeld samen één duidelijke boodschap dragen.",
     "url": "visueel%20design%20projecten/posterdesigns/design001.png",
-    "image": "visueel%20design%20projecten/posterdesigns/design001.png"
+    "image": "visueel%20design%20projecten/posterdesigns/design001.png",
+    "media": ["visueel%20design%20projecten/posterdesigns/design001.png"]
   },
   {
     "id": "designers-bag",
@@ -64,6 +97,13 @@
     "year": "2025",
     "description": "Een productdesign voor een karaktervolle tas, uitgewerkt van eerste vormstudie tot verschillende presentaties.",
     "url": "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage001.png",
-    "image": "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage001.png"
+    "image": "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage001.png",
+    "media": [
+      "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage001.png",
+      "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage002.png",
+      "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage003.png",
+      "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage004.png",
+      "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage005.png"
+    ]
   }
 ]

@@ -10,6 +10,15 @@ const fallbackProjects = [
     url: 'visueel%20design%20projecten/websites/vintage-lovers-market/index.html',
     image:
       'visueel%20design%20projecten/websites/vintage-lovers-market/images/hero/vintage-market-hero.jpg',
+    media: [
+      'visueel%20design%20projecten/websites/vintage-lovers-market/images/hero/vintage-market-hero.jpg',
+      'visueel%20design%20projecten/websites/vintage-lovers-market/images/items/donkerbruine-leren-jas.jpg',
+      'visueel%20design%20projecten/websites/vintage-lovers-market/images/items/houten-eetkamerstoel.jpg',
+      'visueel%20design%20projecten/websites/vintage-lovers-market/images/items/keramieken-vaas.jpg',
+      'visueel%20design%20projecten/websites/vintage-lovers-market/images/items/messing-tafellamp.jpg',
+      'visueel%20design%20projecten/websites/vintage-lovers-market/images/items/ovale-spiegel.jpg',
+      'visueel%20design%20projecten/websites/vintage-lovers-market/images/items/zijden-blouse.jpg',
+    ],
   },
   {
     id: 'pizza-house',
@@ -30,6 +39,18 @@ const fallbackProjects = [
     description:
       'Een heldere visuele richting voor een merk dat dagelijkse eenvoud net iets leuker maakt.',
     url: 'visueel%20design%20projecten/websites/klikoklaar/index.html',
+    image: 'visueel%20design%20projecten/websites/klikoklaar/image/hero-werk.png',
+    media: [
+      'visueel%20design%20projecten/websites/klikoklaar/image/hero-werk.png',
+      'visueel%20design%20projecten/websites/klikoklaar/image/logo-klikoklaar-horizontal.png',
+      'visueel%20design%20projecten/websites/klikoklaar/image/after-blauwecontainer.jpg',
+      'visueel%20design%20projecten/websites/klikoklaar/image/after-grijzecontainer.jpg',
+      'visueel%20design%20projecten/websites/klikoklaar/image/after-groencontainer.jpg',
+      'visueel%20design%20projecten/websites/klikoklaar/image/before-blauwecontainer.jpg',
+      'visueel%20design%20projecten/websites/klikoklaar/image/before-grijzecontainer.jpg',
+      'visueel%20design%20projecten/websites/klikoklaar/image/before-groencontainer.jpg',
+      'visueel%20design%20projecten/websites/klikoklaar/image/close-up-schoon-resultaat.jpg',
+    ],
   },
   {
     id: 'gerechtbuilder',
@@ -52,6 +73,17 @@ const fallbackProjects = [
     url: 'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/product%20mockup%20showcase.png',
     image:
       'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/product%20mockup%20showcase.png',
+    media: [
+      'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/Brand%20baseline.png',
+      'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/Logo%20system%20and%20variations.png',
+      'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/Premary%20logo%20pres..png',
+      'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/Urban%20campaign%20ads.png',
+      'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/app%20UI%20and%20UX%20previews.png',
+      'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/custom%20icon%20collection.png',
+      'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/flash%20photography%20aesthetics.png',
+      'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/product%20mockup%20showcase.png',
+      'visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/social%20media%20visuals.png',
+    ],
   },
   {
     id: 'poster-design',
@@ -63,6 +95,7 @@ const fallbackProjects = [
       'Een grafische postercompositie waarin typografie, kleur en beeld samen één duidelijke boodschap dragen.',
     url: 'visueel%20design%20projecten/posterdesigns/design001.png',
     image: 'visueel%20design%20projecten/posterdesigns/design001.png',
+    media: ['visueel%20design%20projecten/posterdesigns/design001.png'],
   },
   {
     id: 'designers-bag',
@@ -75,6 +108,13 @@ const fallbackProjects = [
     url: 'visueel%20design%20projecten/productdesigns/designers%20bag/bagimage001.png',
     image:
       'visueel%20design%20projecten/productdesigns/designers%20bag/bagimage001.png',
+    media: [
+      'visueel%20design%20projecten/productdesigns/designers%20bag/bagimage001.png',
+      'visueel%20design%20projecten/productdesigns/designers%20bag/bagimage002.png',
+      'visueel%20design%20projecten/productdesigns/designers%20bag/bagimage003.png',
+      'visueel%20design%20projecten/productdesigns/designers%20bag/bagimage004.png',
+      'visueel%20design%20projecten/productdesigns/designers%20bag/bagimage005.png',
+    ],
   },
 ];
 
@@ -103,7 +143,8 @@ const renderProjects = (projects) => {
   });
 };
 const openProject = (project) => {
-  dialogContent.innerHTML = `<p class="kicker">${project.typeLabel} / ${project.year}</p><h2>${project.title}</h2><p>${project.description}</p><a class="button button-dark" href="${project.url}" target="_blank" rel="noreferrer">Bekijk live project <span>↗</span></a>`;
+  const media = (project.media || []).map((source, index) => `<img src="${source}" alt="${project.title} afbeelding ${index + 1}" loading="lazy" />`).join('');
+  dialogContent.innerHTML = `<p class="kicker">${project.typeLabel} / ${project.year}</p><h2>${project.title}</h2><p>${project.description}</p>${media ? `<div class="project-gallery">${media}</div>` : ''}<a class="button button-dark" href="${project.url}" target="_blank" rel="noreferrer">Bekijk live project <span>↗</span></a>`;
   dialog.showModal();
 };
 renderProjects(fallbackProjects);

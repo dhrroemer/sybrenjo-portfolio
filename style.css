@@ -616,6 +616,23 @@ dialog::backdrop {
   max-width: 510px;
   color: var(--muted);
 }
+#dialog-content .project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 28px 0;
+}
+#dialog-content .project-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #d9d1c5;
+}
+#dialog-content .project-gallery img:first-child {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
 #dialog-content a {
   display: inline-block;
   margin-top: 20px;
@@ -713,5 +730,11 @@ dialog::backdrop {
   }
   .site-footer .brand {
     display: inline-flex;
+  }
+  #dialog-content .project-gallery {
+    grid-template-columns: 1fr;
+  }
+  #dialog-content .project-gallery img:first-child {
+    grid-column: auto;
   }
 }
