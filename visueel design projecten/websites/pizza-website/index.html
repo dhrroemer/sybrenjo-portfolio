@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza House | Italiaans restaurant</title>
+    <meta
+      name="description"
+      content="Pizza House, authentieke Italiaanse pizza, verse pasta, desserts en dranken in een moderne statische restaurantwebsite."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#home" class="logo">Pizza House</a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigatie">
+          ☰
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">Over ons</a>
+          <a href="#featured">Specialiteiten</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Galerij</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" id="cart-button" aria-label="Open winkelwagen">
+          Winkelwagen
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Authentieke Italiaanse keuken</p>
+            <h1>Verse pizza en pasta, gebouwd voor smaak en eenvoud</h1>
+            <p>
+              Een moderne restaurantwebsite met duidelijke navigatie, snelle
+              scanbaarheid en directe focus op bestellen, menu bekijken en
+              contact opnemen.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#menu" class="btn btn-primary">Bekijk menu</a>
+              <button class="btn btn-secondary" id="hero-cart-button" type="button">
+                Open winkelwagen
+              </button>
+            </div>
+
+            <div class="hero-meta">
+              <span>Dagelijks open van 12:00 tot 22:00</span>
+              <span>Bezorging binnen 30 tot 45 minuten</span>
+            </div>
+          </div>
+
+          <div class="reservation-card">
+            <h2>Snelle bestelling</h2>
+            <p>Kies direct uit onze populairste gerechten.</p>
+            <div class="reservation-list" id="quick-order-list"></div>
+            <a href="#featured" class="btn btn-primary btn-full">Bekijk favorieten</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-bar">
+        <div class="container info-grid">
+          <div class="info-box">
+            <h3>Adres</h3>
+            <p>Hoofdstraat 123, Amsterdam</p>
+          </div>
+          <div class="info-box">
+            <h3>Telefoon</h3>
+            <p>+31 20 123 4567</p>
+          </div>
+          <div class="info-box">
+            <h3>Afhalen</h3>
+            <p>Klaar vanaf 20 minuten</p>
+          </div>
+          <div class="info-box">
+            <h3>Bezorging</h3>
+            <p>Beschikbaar in de regio</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="about-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=80"
+              alt="Interieur van een sfeervol Italiaans restaurant"
+              class="about-image"
+            />
+          </div>
+
+          <div class="about-text">
+            <p class="eyebrow">Over ons</p>
+            <h2>Een restaurantsite moet verkopen, niet alleen decoreren</h2>
+            <p>
+              Deze versie is opnieuw opgebouwd rond duidelijke contentblokken,
+              betere hiërarchie en een sterkere visuele balans. Minder ruis,
+              betere leesbaarheid en meer focus op gerechten en actie.
+            </p>
+
+            <ul class="feature-list">
+              <li>Heldere structuur voor desktop en mobiel</li>
+              <li>Meer contrast en betere leesbaarheid</li>
+              <li>Meer gerechten, direct filterbaar</li>
+              <li>Eenvoudig te hosten op GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section" id="featured">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Specialiteiten</p>
+            <h2>Onze populairste keuzes</h2>
+            <p>
+              Dit zijn de gerechten die bovenaan horen te staan, omdat ze direct
+              converteren en de bezoeker snel richting een keuze sturen.
+            </p>
+          </div>
+
+          <div class="featured-grid" id="featured-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="menu">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Menu</p>
+            <h2>Pizza, pasta, desserts en dranken</h2>
+            <p>
+              Geen sliders, geen visuele chaos, gewoon een duidelijk en groter menu.
+            </p>
+          </div>
+
+          <div class="menu-filter">
+            <button class="filter-btn active" data-category="all">Alles</button>
+            <button class="filter-btn" data-category="pizza">Pizza</button>
+            <button class="filter-btn" data-category="pasta">Pasta</button>
+            <button class="filter-btn" data-category="dessert">Dessert</button>
+            <button class="filter-btn" data-category="drinks">Dranken</button>
+          </div>
+
+          <div class="menu-grid" id="menu-grid"></div>
+        </div>
+      </section>
+
+      <section class="section alt-section" id="gallery">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Galerij</p>
+            <h2>Sfeer, keuken en presentatie</h2>
+            <p>
+              Deze placeholders geven direct een betere uitstraling, zonder dat
+              de site technisch ingewikkeld wordt.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+              alt="Restaurant interieur"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80"
+              alt="Sfeervolle restaurantverlichting"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80"
+              alt="Ingedekte tafel"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=80"
+              alt="Geserveerd gerecht"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80"
+              alt="Pizza close-up"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80"
+              alt="Restauranttafel"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Reviews</p>
+            <h2>Wat gasten waarderen</h2>
+            <p>Social proof hoort zichtbaar te zijn, niet verstopt onderaan.</p>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <p>
+                “Snelle levering, goede pizza en een veel duidelijkere website
+                dan de meeste lokale restaurants.”
+              </p>
+              <h4>Lisa</h4>
+            </article>
+
+            <article class="testimonial-card">
+              <p>
+                “De menustructuur werkt goed, ik zie direct wat ik wil bestellen
+                zonder eindeloos te scrollen.”
+              </p>
+              <h4>Mark</h4>
+            </article>
+
+            <article class="testimonial-card">
+              <p>
+                “De pasta was sterk, de prijzen zijn helder en mobiel werkt het
+                gewoon goed.”
+              </p>
+              <h4>Sven</h4>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-text">
+            <p class="eyebrow">Contact</p>
+            <h2>Neem contact op</h2>
+            <p>
+              Dit formulier werkt in demo-modus. Voor GitHub Pages is dat prima
+              als visuele basis. Later kun je er Formspree, Netlify Forms of een
+              eigen backend aan koppelen.
+            </p>
+
+            <form class="contact-form" id="contact-form">
+              <input type="text" name="name" placeholder="Naam" required />
+              <input type="email" name="email" placeholder="E-mail" required />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Bericht"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary">Versturen</button>
+              <p class="form-status" id="form-status"></p>
+            </form>
+          </div>
+
+          <div class="contact-card">
+            <h3>Pizza House</h3>
+            <p>Hoofdstraat 123</p>
+            <p>Amsterdam, Nederland</p>
+            <p>Dagelijks open van 12:00 tot 22:00</p>
+            <p>+31 20 123 4567</p>
+            <p>info@pizzahouse.nl</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <div class="cart-header">
+        <h2>Jouw bestelling</h2>
+        <button class="cart-close" id="cart-close" aria-label="Sluit winkelwagen">×</button>
+      </div>
+
+      <div class="cart-body" id="cart-items">
+        <p class="empty-cart-message">Je winkelwagen is nog leeg.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Subtotaal</span>
+            <strong id="cart-subtotal">€0.00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Bezorgkosten</span>
+            <strong id="cart-delivery">€2.50</strong>
+          </div>
+          <div class="summary-row total-row">
+            <span>Totaal</span>
+            <strong id="cart-total">€2.50</strong>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-full" id="checkout-button" type="button">
+          Bestelling afronden
+        </button>
+        <p class="checkout-note" id="checkout-note"></p>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Pizza House</h3>
+          <p>
+            Luxe statische restaurantwebsite, geschikt voor directe hosting op GitHub Pages.
+          </p>
+        </div>
+
+        <div>
+          <h4>Navigatie</h4>
+          <ul>
+            <li><a href="#about">Over ons</a></li>
+            <li><a href="#featured">Specialiteiten</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>+31 20 123 4567</li>
+            <li>info@pizzahouse.nl</li>
+            <li>Amsterdam</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Pizza House. Alle rechten voorbehouden.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

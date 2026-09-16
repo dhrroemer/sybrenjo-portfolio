@@ -1,0 +1,69 @@
+[
+  {
+    "id": "vintage-lovers",
+    "title": "Vintage Lovers Market",
+    "type": "web",
+    "typeLabel": "Webdesign",
+    "year": "2026",
+    "description": "Een digitaal platform voor vintage vondsten, met een rustige editorial stijl en ruimte voor onafhankelijke verkopers.",
+    "url": "visueel%20design%20projecten/websites/vintage-lovers-market/index.html",
+    "image": "visueel%20design%20projecten/websites/vintage-lovers-market/images/hero/vintage-market-hero.jpg"
+  },
+  {
+    "id": "pizza-house",
+    "title": "Pizza House",
+    "type": "web",
+    "typeLabel": "Webdesign",
+    "year": "2026",
+    "description": "Een energieke restaurantsite die bezoekers zonder omwegen van menu naar bestelling brengt.",
+    "url": "visueel%20design%20projecten/websites/pizza-website/index.html"
+  },
+  {
+    "id": "klikoklaar",
+    "title": "KlikoKlaar",
+    "type": "web",
+    "typeLabel": "Webdesign",
+    "year": "2025",
+    "description": "Een heldere visuele richting voor een merk dat dagelijkse eenvoud net iets leuker maakt.",
+    "url": "visueel%20design%20projecten/websites/klikoklaar/index.html"
+  },
+  {
+    "id": "gerechtbuilder",
+    "title": "Gerechtbuilder",
+    "type": "web",
+    "typeLabel": "Webdesign",
+    "year": "2025",
+    "description": "Een interactieve tool die van losse ingrediënten een concreet gerecht maakt.",
+    "url": "visueel%20design%20projecten/websites/gerechtbuilder/index.html"
+  },
+  {
+    "id": "sportdrink-brandkit",
+    "title": "Sportdrink Brandkit",
+    "type": "brand",
+    "typeLabel": "Branding",
+    "year": "2025",
+    "description": "Een complete visuele identiteit voor een sportdrank, van logo-systeem en iconen tot campagnes en productpresentatie.",
+    "url": "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/product%20mockup%20showcase.png",
+    "image": "visueel%20design%20projecten/brandingdesigns/sportdrink-brandkit/product%20mockup%20showcase.png"
+  },
+  {
+    "id": "poster-design",
+    "title": "Poster Design",
+    "type": "poster",
+    "typeLabel": "Posterdesign",
+    "year": "2025",
+    "description": "Een grafische postercompositie waarin typografie, kleur en beeld samen één duidelijke boodschap dragen.",
+    "url": "visueel%20design%20projecten/posterdesigns/design001.png",
+    "image": "visueel%20design%20projecten/posterdesigns/design001.png"
+  },
+  {
+    "id": "designers-bag",
+    "title": "Designers Bag",
+    "type": "product",
+    "typeLabel": "Productdesign",
+    "year": "2025",
+    "description": "Een productdesign voor een karaktervolle tas, uitgewerkt van eerste vormstudie tot verschillende presentaties.",
+    "url": "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage001.png",
+    "image": "visueel%20design%20projecten/productdesigns/designers%20bag/bagimage001.png"
+  }
+]
